@@ -24,6 +24,5 @@
 
 // Refactor the method so that it loops through the prey list and checks to see if the parameter you passed in is on the prey list. If so, say the lion is eating it. If not, say the lion isn't interested.
 
-// Instead of logging it to the console, return an html string
+// Instead of logging it to the console, return an html string about the eating and prints it to the DOM
 
-// Write a function to print the html string to the console

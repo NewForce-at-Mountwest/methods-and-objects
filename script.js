@@ -26,6 +26,11 @@ var antelope = {
         console.log("The antelope is quiet.")
     }
 }
+
+
+antelope.saySomething();
+
+
 // Build an object representing a lion
 // It should have a name and a food list
 var lionObject = {
@@ -37,11 +42,15 @@ var lionObject = {
     }, 
     eat: function(foodParameter){
         var doesHeEatIt;
+        // Loop through the food arary
         for(var i = 0; i < this.foodList.length; i++){
+            // Check to see if what you passed in is the same as the current food you're iterating over
             if(foodParameter === this.foodList[i]){
+                // if so, reassign doesHeEatIt and stop looping
                 doesHeEatIt = `The lion eats the ${foodParameter}`;
                 break;
             } else {
+                // if not, reassign doesHeEatIt and stop looping
                 doesHeEatIt = "The lion isn't hungry.";
             }
         }
@@ -53,34 +62,13 @@ console.log(lionObject.name);
 lionObject.sayRoar();
 lionObject.eat("Pizza");
 lionObject.eat(antelope.species);
-
-
-
-// Give this object a method called `roar`
-
-// Invoke the method
-
-// Make another object called antelope and give it a food list
+lionObject.eat(antelope.name);
 
 
 
 
-// Invoke the method
-antelope.saySomething();
 
 
 
-// Give the lion a method called eat that takes a parameter of "food". It should log "The lion eats the [food]" to the console
 
-
-// Give the antelope a similar eat method
-
-// Have the antelope eat some grass
-
-// Have the lion eat the antelope
-
-
-// Refactor the method so that it loops through the prey list and checks to see if the parameter you passed in is on the prey list. If so, say the lion is eating it. If not, say the lion isn't interested.
-
-// Instead of logging it to the console, return an html string about the eating and prints it to the DOM
 
